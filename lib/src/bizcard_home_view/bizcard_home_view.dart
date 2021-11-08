@@ -44,10 +44,10 @@ class BizcardView extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            const CardNames(
+            const CardContent(
               title: 'Raphael Ezekiel',
             ),
-            const CardNames(
+            const CardContent(
               title: 'etiabasiezekiel@ymail.com',
             ),
             const SizedBox(height: 15),
@@ -55,13 +55,12 @@ class BizcardView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: const [
                 SocialIcons(
-                  icon: FontAwesomeIcons.facebook,
-                  color: Colors.blue,
-                ),
+                    icon: FontAwesomeIcons.facebook, color: Colors.blue),
                 SocialIcons(
                     icon: FontAwesomeIcons.instagram, color: Colors.purple),
                 SocialIcons(icon: FontAwesomeIcons.twitter, color: Colors.blue),
-                SocialIcons(icon: FontAwesomeIcons.linkedin, color: Colors.blue)
+                SocialIcons(
+                    icon: FontAwesomeIcons.linkedin, color: Colors.blue),
               ],
             )
           ],
@@ -87,9 +86,9 @@ class SocialIcons extends StatelessWidget {
   }
 }
 
-class CardNames extends StatelessWidget {
+class CardContent extends StatelessWidget {
   final String title;
-  const CardNames({Key? key, required this.title}) : super(key: key);
+  const CardContent({Key? key, required this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
